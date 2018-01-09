@@ -1,9 +1,10 @@
-<h1>All Ads</h1>
- <% @advertisements.each do |ad| %>
+<h1>All Advertisements</h1>
+ # #12
+ <% @advertisements.each do |advertisement| %>
   <div class="media">
      <div class="media-body">
        <h4 class="media-heading">
-         <%= link_to "$#{ad.price}: #{ad.title}", ad%>
+         <%= link_to advertisement.title, advertisement %>
        </h4>
      </div>
    </div>

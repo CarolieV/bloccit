@@ -20,13 +20,12 @@ require 'random_data'
      body: RandomData.random_paragraph
    )
  end
-  Post2.find_or_create_by!(
-     title: "Carolie is the best"
-     body: "Yes it's true"
-   )
-  end
+  Post.find_or_create_by!(
+     title: "Carolie is the best",
+     body: "Yes it's true" )
+
    Comment.find_or_create_by!(
-      post: posts.Post2
+      post: posts.Post,
       body: "It's still true"
     
     
