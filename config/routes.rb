@@ -7,16 +7,19 @@ Rails.application.routes.draw do
   get 'advertisements/new'
 
   get 'advertisements/create'
+  
 
   resources :questions
 
   resources :advertisements
-
-  resources :posts
-
-  root "welcome#index"
   
+  resources :topics do
+     resources :posts, except: [:index]
+   end
+
    get 'about' => 'welcome#about'
+   
+     root "welcome#index"
    
    get "welcome/contact"
    

@@ -1,0 +1,13 @@
+# Creating a model and controller instructions
+# 1. run rails generate model (name) (attributes)
+# 2. migrate changes
+# 3. Write tests for spec of model to test that it responds to its attributes
+# 4. Run spec
+# 5. Confirm all tests pass
+# 6. run rails generate controller (name) (crud attributes)
+# 7. go to routes.rb and change the generated routes to resources :(Model name)
+# 8. write your tests for your controller attributes in its spec
+# 9. make sure they pass
+# 10. write your methods for your controller
+# 11. Go to your models views and update the code
+
