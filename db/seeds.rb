@@ -35,9 +35,15 @@ require 'random_data'
    Comment.find_or_create_by!(
       post: posts.Post,
       body: "It's still true"
+      )
+ # Create Questions
+ 100.times do
+    Question.create!(
+     title: RandomData.random_sentence,
+     body: RandomData.random_paragraph,
+     resolved: false
+     )
     
-    
-    )
  
  puts "Seed finished"
  puts "#{Topic.count} topics created"
