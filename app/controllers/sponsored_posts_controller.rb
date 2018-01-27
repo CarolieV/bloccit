@@ -13,7 +13,7 @@ class SponsoredPostsController < ApplicationController
     @sponsoredpost = SponsoredPost.find(params[:id])
   end
   
-  def number_field(object_name, method, options = {})
-        Tags::NumberField.new(object_name, method, self, options).render
+  def number_field(sponsoredpost, method, options = {})
+  Tags::NumberField.new(sponsoredpost, method, self, options).render
   end
 end
