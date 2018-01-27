@@ -1,5 +1,6 @@
 require 'rails_helper'
 
+<<<<<<< HEAD
 RSpec.describe QuestionController, type: :controller do
     
  let (:my_question) do
@@ -10,12 +11,16 @@ RSpec.describe QuestionController, type: :controller do
          resolved: false
          )
 
+=======
+RSpec.describe QuestionControllerController, type: :controller do
+>>>>>>> cae9a8cc71c2f21f1cb343e1961c5ffab627fbba
 
   describe "GET #index" do
     it "returns http success" do
       get :index
       expect(response).to have_http_status(:success)
     end
+<<<<<<< HEAD
     
     it "assigns [my_question] to @posts" do
        get :index
@@ -144,3 +149,8 @@ RSpec.describe QuestionController, type: :controller do
    end
   end
 
+=======
+  end
+
+end
+>>>>>>> cae9a8cc71c2f21f1cb343e1961c5ffab627fbba
