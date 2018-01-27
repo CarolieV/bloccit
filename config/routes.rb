@@ -1,5 +1,7 @@
 Rails.application.routes.draw do
   
+  get 'question_controller/index'
+
   resources :advertisements
 
   resources :posts

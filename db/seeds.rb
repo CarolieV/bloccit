@@ -21,17 +21,15 @@ require 'random_data'
    )
  end
   Post2.find_or_create_by!(
-     title: "Carolie is the best"
-     body: "Yes it's true"
+     title: "Carolie is the best",
+     body: RandomData.random_paragraph
    )
-  end
+ end
    Comment.find_or_create_by!(
       post: posts.Post2
       body: "It's still true"
-    
-    
     )
- 
+ end
  puts "Seed finished"
  puts "#{Post.count} posts created"
  puts "#{Comment.count} comments created"
