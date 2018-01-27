@@ -1,14 +1,6 @@
 Rails.application.routes.draw do
   
-<<<<<<< HEAD
   resources :questions
-=======
-  get 'question_controller/index'
-
-  resources :advertisements
-
-  resources :posts
->>>>>>> cae9a8cc71c2f21f1cb343e1961c5ffab627fbba
 
   resources :advertisements
   
