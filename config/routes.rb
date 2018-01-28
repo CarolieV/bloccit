@@ -5,6 +5,15 @@ Rails.application.routes.draw do
   resources :advertisements
 
   resources :posts
+  
+  resources :questions
+  
+  resources :topics
+  
+  resources :sponsoredposts
+  
+  resources :users, only: [:new, :create]
+
 
   post 'users/confirm/' => 'users#confirm/'
   
