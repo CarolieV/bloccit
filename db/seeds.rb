@@ -24,12 +24,10 @@ require 'random_data'
      title: "Carolie is the best",
      body: RandomData.random_paragraph
    )
- end
    Comment.find_or_create_by!(
-      post: posts.Post2
+      post: posts.Post2,
       body: "It's still true"
     )
- end
  puts "Seed finished"
  puts "#{Post.count} posts created"
  puts "#{Comment.count} comments created"
